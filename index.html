@@ -1,0 +1,231 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Frontend Mentor | Crowdfunding product page</title>
+</head>
+
+<body>
+  <!-- header -->
+  
+    <header>
+      <div class="hero-image"></div>
+      <div class="container-fluid">
+        <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-padding">
+            <a class="navbar-logo" href="index.html"><img class="logo-position" src="images/logo-hover.svg"></a>
+            <button class="navbar-toggler button-border" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse justify-content-end toggler-text" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link menu-item" aria-current="page" href="index.html">About</a>
+                    <a class="nav-link menu-item border-menu" href="#">Discover</a>
+                    <a class="nav-link menu-item" href="#">Get Started</a>
+                </div>
+            </div>
+
+        </nav>
+      </div>
+      </div>
+    </header>
+    
+</div>
+ <!-- project intro -->
+  <section class="project-intro">
+    <div class="visual-absolute">
+    <img src="images/meet-icon.svg" alt="logo mastercraft"/>
+  </div>
+    <h1>Meet</h1>
+    <p>Uma forma segura, humana e confiável de encontrar a profissional ideal para sua família.</p>
+    <div class="flex-intro">
+    <button id="modal-btn" class="btn bg-green">Nossos Cursos</button>
+    <button class="btn btn-bookmark"><img class="bookmark" src = "images/icon-bookmark.svg"  alt="icon bookmark"><span class="bookmark-text"></span></button>
+    </div>
+  </section>
+  
+  <!-- Backers progress -->
+  <section class="backers-progress">
+    <div class="progress-item">
+        <div class="digit"><span id="total-amount"></span></div>
+        <div class="digit-text" id="total-target">Turmas concluídas nos últimos 7 meses</div>
+    </div>
+    <div class="progress-item border-progress">
+      <div class="digit" id="backers"></div>
+      <div class="digit-text">Turmas Abertas</div>
+    </div>
+      <div class="progress-item">
+        <div id="countdown" class="digit"></div> 
+        <div class="digit-text">Famílias Cadastradas</div>
+      </div>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </section>
+  
+  <!-- project & pledge -->
+  <section class="about-this-project">
+    <h2>Como funciona nossos Serviços?</h2>
+
+    <p>Bem-vindo à nossa plataforma digital de seleção de babás! Aqui, proporcionamos uma solução inovadora para famílias que desejam encontrar a babá perfeita para cuidar de seus filhos. Nosso objetivo é facilitar o processo de escolha, levando em consideração não apenas a experiência e habilidades das babás, mas também a combinação de perfil entre elas e as famílias.</p>
+      <p>O grande diferencial de nossa plataforma é o algoritmo avançado de combinação de perfil. Ao criar um perfil para sua família, você fornecerá informações importantes sobre seus filhos, rotinas, preferências e requisitos específicos. Com base nesses dados, nosso sistema buscará babás cujo perfil se alinhe com suas necessidades.</p>
+
+    <p>Com nossa plataforma digital, você economizará tempo e terá a tranquilidade de encontrar uma babá que não apenas possua as qualificações necessárias, mas que também esteja perfeitamente alinhada com as necessidades e valores da sua família.</p>
+    
+    <div class="pledge-container" data-pledge="bamboo">
+      <h3>Funcionalidade gratuita</h3>
+      <div class="pledge-green">Free</div>
+      <p>Na nossa plataforma, oferecemos uma funcionalidade gratuita que permite o acesso ao login e à combinação de perfis entre famílias e babás, sem a necessidade de mediação ou cobrança pela nossa parte. Queremos fornecer a oportunidade de explorar as possibilidades de combinação de perfil de forma livre e acessível.</p>
+      <p>Com o login gratuito, você terá a capacidade de criar um perfil detalhado para sua família, fornecendo informações sobre seus filhos, rotinas, preferências e requisitos específicos. Isso ajudará a encontrar babás que possuam características e habilidades que se alinhem com suas necessidades e valores familiares.
+        Da mesma forma, babás interessadas também poderão criar perfis gratuitos, destacando suas experiências, habilidades e disponibilidade. Isso permitirá que elas sejam encontradas por famílias em busca de babás que atendam aos seus critérios de seleção.</p>
+      <button class="btn bg-green" id="btn-open-sub-pl-bamboo" data-btn="bamboo">Como Aproveitar</button>
+    </div>
+    
+    <div class="pledge-container" data-pledge="black">
+      <h3>Mediação de Serviços</h3>
+      <div class="pledge-green">R$150 or more</div>
+      <p>Ao escolher a mediação em nossa plataforma, você terá acesso a benefícios exclusivos. Nossa equipe especializada estará disponível para acompanhar todo o processo de seleção e contratação, desde a análise dos perfis até o acompanhamento pós-contratação. 
+        Faremos parte de todas as reuniões e negociações para garantir um alinhamento adequado entre ambas as partes.</p>
+      <p>Para proporcionar uma experiência ainda mais segura, oferecemos um contrato de garantia. Isso significa que, caso ocorra uma quebra de contrato por qualquer uma das partes dentro de um período acordado, nós nos comprometemos a buscar uma solução adequada para a substituição da babá ou a resolução do problema.</p>
+      <p>Com essa funcionalidade, buscamos minimizar os riscos associados à contratação de babás e oferecer suporte profissional em todo o processo. Nossa equipe estará à disposição para esclarecer dúvidas, fornecer orientação e auxiliar na resolução de eventuais conflitos que possam surgir durante a relação de trabalho.</p>
+      <button class="btn bg-green" id="btn-open-sub-pl-blackedt" data-btn="black">Adquirir</button>
+    </div>
+
+    <div class="pledge-container">
+      <h3>Treinamento Profissionalizante</h3>
+      <div class="pledge-green"> Cursos gratuito e pagos</div>
+      <p>Apresentamos a você nossa funcionalidade de cursos profissionalizantes, uma opção abrangente para aqueles que desejam se capacitar e se destacar na área de cuidados infantis. Nossa plataforma oferece aulas online especializadas em pedagogia, primeiros socorros, primeira infância e hábitos alimentares, fornecendo o conhecimento necessário para cuidar de crianças com excelência.</p>
+      <p>Com nossos cursos profissionalizantes, você terá a oportunidade de adquirir habilidades essenciais para se tornar um profissional capacitado e confiante. Nossos materiais de ensino foram cuidadosamente desenvolvidos por especialistas, abordando tópicos relevantes e práticos relacionados ao cuidado infantil.</p>
+      <p>Ao participar dos cursos, você receberá um perfil premium em nossa plataforma. Isso significa que você terá acesso a benefícios exclusivos, incluindo mediação inclusa e prioridade na fila dos matches. Nossa equipe especializada estará disponível para orientá-lo e apoiá-lo durante todo o processo de combinação com as famílias.</p>
+      <p>A mediação inclusa em nosso serviço garante que a comunicação entre você e as famílias seja facilitada e segura. Estaremos presentes para auxiliar na negociação, no estabelecimento de contratos e em eventuais resoluções de conflitos, garantindo um ambiente de trabalho harmonioso e profissional.</p>
+      <p>Invista em sua carreira de cuidador infantil e se destaque no mercado com nossos cursos profissionalizantes. Adquira um perfil premium, desfrute de mediação inclusa e obtenha prioridade na fila dos matches. Estamos aqui para apoiar você em sua jornada e ajudá-lo a construir uma carreira gratificante e de sucesso no cuidado infantil.</p>
+      <button class="btn bg-green" id="btn-open-sub-pl-blackedt" data-btn="black">Adquirir</button>
+    </div>
+  </section>
+
+  <!-- Sub-pledge modals via Home screen pledges-->
+
+
+  <div id="sub-pl-bamboo" class="sub-modal-pledge">
+    <span id="close-sub-pl-bamboo" class="pl-close">&times;</span>
+    <div class="sub-pl-content">
+      <h3 class="pl-title">Funcionalidade gratuita</h3>
+      <p class="pl-text1">Free</p>
+      <p class="pl-stock"><strong class="q-value" data-attr="bamboo"></strong></p>
+      <p class="pl-info"> É importante ressaltar que, embora a combinação de perfil seja gratuita e sem mediação pela nossa plataforma, não podemos nos responsabilizar pela verificação, segurança e quaisquer acordos ou termos estabelecidos entre as famílias e as babás. É crucial que ambas as partes realizem uma avaliação cuidadosa, verifiquem referências e estabeleçam acordos adequados antes de prosseguir com a contratação.</p>
+      <div class="pl-pledge">
+        <button class="pl-submit pay continue" type="submit">Login</button>
+      </div>
+    </div>
+  </div>  
+
+  <div id="sub-pl-blackedt" class="sub-modal-pledge">
+    <span id="close-sub-pl-blackedt" class="pl-close">&times;</span>
+    <div class="sub-pl-content">
+      <h3 class="pl-title">Serviço de Mediação</h3>
+      <p class="pl-text1">R$ 150</p>
+      <p class="pl-stock"><strong class="q-value" data-attr="black"></strong> left</p>
+      <p class="pl-info">É importante mencionar que, ao optar pela mediação em nossa plataforma, será cobrada uma taxa de 2% do valor mensal que a babá receberá. Essa taxa visa cobrir os custos administrativos e operacionais relacionados ao processo de mediação e à prestação de serviços adicionais.</p>
+      <div class="pl-pledge">
+        <button class="pl-submit pay continue" type="submit">Continuar</button>
+      </div>
+    </div>
+  </div>  
+  
+
+
+  <!-- Selection Modal Start -->
+  <section id="modal">
+    <div class="modal-header">
+      <h2>Nossos cursos profissionalizantes</h2>
+      <p>Nossas turmas são abertas constantemente, é preciso entrar em uma lista de interesse e avisaremos quando uma nova turma surgir.</p>
+      <button id="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="pledge-card">
+        <div class="title">
+          <strong>Curso Básico<span> Login</span></strong>
+        </div>
+        <div class="info">
+         <p>Introdução ao comportamente infantil: Cuidados e Primeiros Socorros </p>
+         <p>O curso tem 8h de duração, a metodológia conta com aulas gravadas e sícronas<br> agendadasde acordo com a disponibilidade do nosso instrutor. Além disso,<br> disponibilizamos apostilas e uma trilha de estudos estruturada.</p>
+        </div>
+        <div class="bid">
+          
+        </div>
+      </div>
+      <div class="pledge-card" data-pledge="bamboo">
+        <div class="title">
+          <strong>Curso Intermediário<span> R$500</span></strong>
+        </div>
+        <div class="quantity">
+          
+        </div>
+        <div class="info">
+          <p>Entendendo padrões do comportamento Infantil: Estratégias da educação positiva.</p><p>Neste curso digital de 400 horas, os participantes embarcarão em uma jornada de aprendizado sobre os princípios fundamentais da psicologia infantil, assim como as bases da educação positiva. Através de uma abordagem didática envolvente e recursos multimídia interativos, os alunos terão a oportunidade de adquirir conhecimentos teóricos e práticos, bem como de refletir sobre suas próprias experiências e desafios na educação das crianças.</p> 
+        </div>
+        <div class="bid">
+  
+        </div>
+      </div>
+      <div class="pledge-card" data-pledge="black">
+        <div class="title">
+          <strong>Curso Avançado<span>R$1000</span></strong>
+        </div>
+        <div class="quantity">
+        </div>
+        <div class="info">
+          <p>Curso Avançado: Psicologia Infantil, Comportamento e a Influência das Telas - Como Driblar as Telas: Educação Simples</p><p>O curso avançado de "Psicologia Infantil, Comportamento e a Influência das Telas - Como Driblar as Telas: Educação Simples" é um programa intensivo e especializado, projetado para profissionais da área de psicologia, educadores, pais e demais interessados em aprofundar seus conhecimentos sobre o comportamento infantil em um contexto digital, com ênfase em estratégias práticas para driblar o uso excessivo das telas e promover uma educação simples e saudável.</p> 
+        </div>
+        <div class="bid">
+         
+        </div>
+      </div>
+      <div class="pledge-card unavailable">
+        <div class="title">
+          <strong>Formas de Pagamento<span></span></strong>
+        </div>
+        <div class="quantity">
+        </div>
+        <div class="info">
+         <p>Nossa política de pagmento, devolução e aceite de contrato ficam disponibilizadas em nossa plataforma na sessão. "Pagamentos"</p> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="overlay"></div>
+  <!-- Selection Modal End -->
+
+  <!-- Success modal start -->
+  <div id="success-container">
+    <div id="success-modal">
+      <img src="images/icon-check.svg" id="success-icon">   
+      <h3>Thanks for your support!</h3>
+      <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+      <button id="final-success">Got it!</button>
+    </div>
+  </div>
+  <!-- Success modal end -->
+
+  <!-- Notification modal start -->
+  <div id="notification-container">
+    <div id="notification-modal"></div>
+  </div>
+  <!-- Notification modal end -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
